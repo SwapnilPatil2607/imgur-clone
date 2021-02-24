@@ -1,2 +1,2 @@
 # imgur-clone
-[!alt](SS.png)
+![alt](SS.png)

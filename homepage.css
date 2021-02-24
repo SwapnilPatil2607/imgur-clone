@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  background-color: #2e3035;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin: 0px;
+}
+.Navbar {
+  background-color: transparent;
+  display: flex;
+}
+/* #130f40; */
+.Navbar div img {
+  height: 25px;
+  margin: 5px 0px;
+}
+.Navbar div {
+  margin: 10px auto;
+  height: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.green-box {
+  background-color: #0be881;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+#search_bar {
+  left: 0%;
+  position: absolute;
+  font-size: 20px;
+  width: 500px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #30336b;
+}
+.search_div {
+  width: 600px;
+  position: relative;
+  height: 40px;
+  background-color: white;
+  border-radius: 4px;
+  background-color: #30336b;
+  padding: 0px;
+}
+.search_div > img{
+  position: absolute;
+  top:10%;
+ left:90%;
+}
+.mid {
+  background-size: auto;
+  background-color: #130f40;
+  height: 350px;
+  background-image: url("images/download.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+#container {
+  top: 220px;
+  position: absolute;
+  margin: 50px 200px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+}
+.post {
+  background-color: #7f8c8d;
+  margin: 10px auto;
+  box-shadow: 2px 2px 6px black;
+  width: 220px;
+  border-radius: 4px;
+}
+.post:hover {
+  transition: 400ms;
+  background-color: #a1b0b1;
+}
+.post_img {
+  border-radius: 4px;
+  width: 220px;
+  margin: 0px;
+}
+.details {
+  margin: 0px;
+  height: 30px;
+  text-align: center;
+}
+.pagination {
+  position: absolute;
+  top: 3900px;
+  margin: 40px 500px;
+}
+.pagination button {
+  border-radius: 5px;
+  border:none;
+  background: rgb(57,151,224);
+  background: linear-gradient(130deg, rgba(57,151,224,1) 29%, rgba(9,132,227,1) 52%, rgba(49,26,226,1) 100%, rgba(255,255,255,0) 100%);
+  color:white;
+  padding: 10px 40px;
+}
+.emerald {
+  margin: 20px 120px;
+  background-image: url("images/emerald_imgur.png");
+  background-repeat: no-repeat;
+  height: 150px;
+  position: relative;
+}
+.emerald button {
+  background: rgb(57, 151, 224);
+  background: linear-gradient(
+    130deg,
+    rgba(57, 151, 224, 1) 44%,
+    rgba(9, 132, 227, 1) 55%,
+    rgba(108, 92, 231, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 68px;
+  left: 41%;
+  padding: 13px 60px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.emerald button:hover{
+  transition: 1s;
+  background: rgb(57,151,224);
+  background: linear-gradient(130deg, rgba(57,151,224,1) 29%, rgba(9,132,227,1) 52%, rgba(49,26,226,1) 100%, rgba(255,255,255,0) 100%);
+}
+@media screen and (max-width:950px){
+  #search_bar {
+    width: 300px;
+  }
+  .pagination {
+    position: absolute;
+    top: 3900px;
+    margin: 40px 100px;
+  }
+  #container {
+    
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 20px;
+    position: static;
+  }
+  .pagination{
+    position: static;
+  }
+}
+@media screen and (max-width:750px){
+
+  .Navbar div {
+    font-size: 12px;
+  }
+  .emerald {
+    margin: 20px 20px;
+    background-image: url("images/emerald_imgur.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    position: relative;
+  }
+  .emerald button{
+    top: 50px;
+    padding: 5px 20px;
+  }
+  .search_div{
+    display: none;
+  }
+  #container {
+   
+   
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width:550px){
+  .emerald {
+    margin:10px;
+    background-image: url("images/emerald_imgur.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 400px;
+    position: relative;
+  }
+  .emerald button{
+    top: 30px;
+    padding: 5px 10px;
+  }
+  #container {
+  
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width:900px){
+  .Navbar div {
+    margin: 10px auto;
+    height: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+}
